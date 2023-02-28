@@ -9,7 +9,7 @@ export default function Document() {
         <link
           rel="preconnect"
           href="https://fonts.gstatic.com"
-          crossOrigin="true"
+          crossOrigin="anonymous"
         />
         <link
           href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
@@ -33,7 +33,7 @@ export default function Document() {
           rel="stylesheet"
           href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
           integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
-          crossOrigin="true"
+          crossOrigin="anonymous"
         />
       </Head>
       <body>
