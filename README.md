@@ -42,7 +42,7 @@ let's start using the React Starter project by following the steps below.
 1.  **Clone Repo** Make sure you have a **Rukita-project** clone repository.
 
 	```bash
-	git clone https://github.com/alaunal/idn-media-test.git
+	git clone https://github.com/alaunal/rukita-project.git
 	```
 	
 2. **Setup environment variables**
