@@ -82,8 +82,8 @@ const Searchbox: React.FC<ISearchboxProps> = ({
   }, []);
 
   return (
-    <section className="fixed w-full flex h-20 justify-center items-center backdrop-blur-sm bg-white/30 z-10">
-      <div className="relative w-3/5">
+    <section className="fixed w-full flex h-20 justify-center items-center backdrop-blur-sm bg-white/30 z-10 px-8">
+      <div className="relative w-full lg:w-3/5">
         <input
           type="text"
           placeholder="Search location ..."

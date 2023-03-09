@@ -4,7 +4,7 @@
 
 .card-slider {
   .swiper {
-    @apply pl-4 pr-40;
+    @apply pl-4 pr-32 lg:pr-40;
   }
 
   .swiper-slide {

@@ -42,11 +42,11 @@ const SliderLocation: React.FC<ISliderProps> = ({
   return (
     <section className="fixed backdrop-blur-sm bg-white/50 py-6 w-full bottom-0 left-0 z-10">
       {isLoading ? (
-        <div className="grid grid-cols-4 gap-5 px-4 animate-pulse">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 px-4 animate-pulse">
           <div className="w-full h-48 bg-slate-100 rounded-xl flex"></div>
           <div className="w-full h-48 bg-slate-100 rounded-xl flex"></div>
-          <div className="w-full h-48 bg-slate-100 rounded-xl flex"></div>
-          <div className="w-full h-48 bg-slate-100 rounded-xl flex"></div>
+          <div className="w-full h-48 bg-slate-100 rounded-xl hidden lg:flex"></div>
+          <div className="w-full h-48 bg-slate-100 rounded-xl hidden lg:flex"></div>
         </div>
       ) : !isEmpty(data) ? (
         <div className="card-slider">
@@ -57,6 +57,18 @@ const SliderLocation: React.FC<ISliderProps> = ({
             virtual
             modules={[Virtual]}
             breakpoints={{
+              320: {
+                slidesPerView: 1,
+                spaceBetween: 20
+              },
+              640: {
+                slidesPerView: 2,
+                spaceBetween: 20
+              },
+              920: {
+                slidesPerView: 3,
+                spaceBetween: 20
+              },
               1560: {
                 slidesPerView: 4,
                 spaceBetween: 20,

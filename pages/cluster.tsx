@@ -26,7 +26,7 @@ const defaultLocation = {
 
 const defaultPlaces = "Denpasar, Denpasar City, Bali";
 
-const Home = () => {
+const Cluster = () => {
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
   const [isLoadingDetail, setIsLoadingDetail] = useState<boolean>(false);
@@ -214,4 +214,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Cluster;
